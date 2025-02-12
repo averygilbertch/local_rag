@@ -1,8 +1,9 @@
 openai
-torch
+torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 PyPDF2
 ollama
 pyyaml
 beautifulsoup4
 lxml
 python-dotenv
+numpy

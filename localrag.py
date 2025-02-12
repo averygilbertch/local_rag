@@ -5,6 +5,10 @@ from openai import OpenAI
 import argparse
 import json
 
+# Check if CUDA (GPU) is available
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print(f"Using device: {device}")
+
 # ANSI escape codes for colors
 PINK = '\033[95m'
 CYAN = '\033[96m'
